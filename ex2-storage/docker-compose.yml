@@ -1,0 +1,19 @@
+version: "3.7"
+
+services: 
+  app: 
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    volumes:
+      - db-storage:/var/lib/mysql
+
+volumes: 
+  db-storage:
+    driver: local
+    driver_opts:
+      type: tmpfs
+      device: tmpfs
+      o: size=500m,uid=1000
