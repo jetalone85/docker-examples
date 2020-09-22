@@ -17,3 +17,7 @@ docker container run -p 8080:80 --rm ex1-nginx:latest
 Przykład zastosowania obrazu technicznego oraz uzycia Dockera do wygenerowania części projektu.
 
 Kod przykładowe polecenia znajdują się w `run.sh`.
+
+## EX 03
+
+Przykład przedstawia uzycie kontekstu do wskazania lokalizaji budowania obrazu.
