@@ -1,4 +1,4 @@
-FROM nginx:1.19.1
+FROM nginx:1.21.6
 
 COPY index2.html /usr/share/nginx/html/
 # EXPOSE 80
